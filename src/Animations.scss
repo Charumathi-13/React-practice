@@ -1,0 +1,64 @@
+@keyframes show {
+    0% {
+        opacity: 0;
+        color: aqua;
+    }
+    50% {
+        opacity: 50%;
+        color: chartreuse;
+    }
+    100% {
+        opacity: 100%;
+        color: crimson;
+    }
+}
+
+.fade-in{
+    animation: show 10s ease-in-out;
+}
+
+@keyframes slideRight {   
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 150px;
+    }
+    100% {
+        left: 300px;
+    }
+}
+
+.slide{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    position: relative;
+    animation: slideRight 3s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+        background-color: cyan;
+    }
+    50% {
+        transform: rotate(180deg);
+        left: 100px;
+        background-color: brown;
+    }
+    100% {
+        transform: rotate(300deg);
+        left: 150px;
+        background-color: darkcyan;
+    }
+}
+
+.rotate{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: rotate 5s linear infinite alternate;
+    position: relative;
+}
